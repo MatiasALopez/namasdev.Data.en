@@ -15,8 +15,8 @@ namespace namasdev.Data
         void Update(TEntity entity);
         void UpdateProperties(IEnumerable<TEntity> entities, int batchSize = 100, params string[] properties);
         void UpdateProperties(TEntity entity, params string[] properties);
-        void UpdateDeletedFields(TEntity entity);
-        void UpdateDeletedFields(IEnumerable<TEntity> entities, int batchSize = 100);
+        void UpdateDeletedProperties(TEntity entity);
+        void UpdateDeletedProperties(IEnumerable<TEntity> entities, int batchSize = 100);
         void Delete(IEnumerable<TEntity> entities, int batchSize = 100);
         void Delete(TEntity entity);
         void DeleteByIds(IEnumerable<TId> ids, int batchSize = 100);
