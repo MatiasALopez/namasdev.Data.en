@@ -20,7 +20,7 @@ namespace namasdev.Data
         void Update(TEntity entity);
         Task UpdateAsync(TEntity entity, CancellationToken ct = default);
         void UpdateProperties(IEnumerable<TEntity> entities, byte batchSize = 100, params string[] properties);
-        Task UpdatePropertiesAsync(IEnumerable<TEntity> entities, byte batchSize = 100, string[] properties = null, CancellationToken ct = default);
+        Task UpdatePropertiesAsync(IEnumerable<TEntity> entities, string[] properties, byte batchSize = 100, CancellationToken ct = default);
         void UpdateProperties(TEntity entity, params string[] properties);
         Task UpdatePropertiesAsync(TEntity entity, string[] properties = null, CancellationToken ct = default);
         void UpdateDeletedProperties(TEntity entity);
