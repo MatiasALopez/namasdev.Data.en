@@ -4,27 +4,34 @@
     <TargetFrameworks>net48;net9.0</TargetFrameworks>
     <AssemblyName>namasdev.Data.en</AssemblyName>
     <RootNamespace>namasdev.Data.en</RootNamespace>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Deterministic>true</Deterministic>
     <PackageId>namasdev.Data.en</PackageId>
-    <Version>2.0.0</Version>
+    <Version>0.1.0</Version>
     <Authors>Matias Alberto Lopez</Authors>
     <Description>namasdev Data library (English)</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Copyright>2024</Copyright>
+    <Copyright>Copyright © 2025 Matias Alberto Lopez</Copyright>
     <PackageTags>namasdev</PackageTags>
-    <AssemblyVersion>2.0.0</AssemblyVersion>
-    <FileVersion>2.0.0</FileVersion>
+    <PackageProjectUrl>https://github.com/namasdev/namasdev.en</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/namasdev/namasdev.en</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <FileVersion>0.1.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="namasdev.Core.en" Version="2.0.0" />
+    <PackageReference Include="namasdev.Core.en" Version="0.1.0" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
     <Reference Include="System.Transactions" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
