@@ -21,7 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="namasdev.Core.en" Version="0.1.0" />
+    <PackageReference Include="namasdev.Core.en" Version="[0.1.2,0.2.0)" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
